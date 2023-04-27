@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   
+    <title>소인혁-cool cats</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        body{background-color: #a2e920;}
+        ul, li{margin: 0;padding: 0; list-style: none;}
+
+        .cat {
+            position: absolute; 
+            left: 50%; top: 50%;
+            transform: translate(-50%, -50%);  
+        }
+
+        .cat .slide {
+            width: 2000px;height: 1000px;
+            background-color: #ffffff;
+            box-shadow: 0 0 20px rgba(0,0,0,0.3);
+        }
+
+        .cat .slide ul li a img{
+            width: 2000px;
+        }
+
+        .cat .text{
+            
+            text-align: center;
+            margin: 50px ;   
+        }
+
+   
+        .cat .text a {
+            background-color: #681be4;
+            margin: 50px;
+            padding: 20px 70px ;
+            border-radius: 30px;
+            text-decoration: none;
+            color: #dbd7d7;
+            box-shadow: 0 0 20px rgba(0,0,0,0.3);
+            font-size: 50px;
+            font-family: cursive;
+        }
+
+        .cat .text a:hover {background-color: #d33636;}
+    </style>
+
+        <script src="./script/jquery-1.12.4.min.js"></script>
+        <script src="./script/jquery.innerfade.js"></script>
+        <script>
+            $(function(){
+                $(".inner-fade").innerfade({
+                    Animationtype:"fade",
+                    timeout:1000
+                })
+            })
+        </script>
+
+</head>
+<body>
+    <!-- .cat>.slide+.test -->
+    <div class="cat">
+        <div class="slide">
+            <ul class="inner-fade">
+                <li><a href="#"><img src="./images/1.svg" alt="coolcat_1p"></a></li>
+                <li><a href="#"><img src="./images/2.svg" alt="coolcat_2p"></a></li>
+                <li><a href="#"><img src="./images/3.svg" alt="coolcat_3p"></a></li>
+                <li><a href="#"><img src="./images/4.svg" alt="coolcat_4p"></a></li>
+            </ul>
+           </div>
+        <div class="text">
+
+            <a href="./images/cat.pdf">see</a>
+
+            <a href="./images/images.zip">down</a>
+        </div>
+    </div>
+</body>
+</html>
